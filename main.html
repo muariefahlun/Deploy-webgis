@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="libs/leaflet/leaflet.css"/>
+        <link rel="stylesheet" href="css/mymap.css"/>
+
+        <script src="libs/leaflet/leaflet.js"> </script>
+        <body>
+            <div id="mapvid>"></div>
+            <script>
+                var mymap= L.map("mapvid").setView([-0.9666393750609776,116.70807789162883], 14);
+                
+                var darkBaseMap = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+                    maxZoom: 20,
+                    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(mymap);
+
+
+            </script>
+        </body>
+    </head>
+</html>
